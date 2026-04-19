@@ -24,8 +24,8 @@ const NOTE_COLORS = [
   "hsl(270 70% 65%)",
 ];
 
-function getDaysInMonth(year: number, month: number) {
-  return new Date(year, month + 1, 0).getDate();
+function getDaysInMonth(_year: number, _month: number) {
+  return 28;
 }
 
 function getFirstDayOfMonth(year: number, month: number) {
