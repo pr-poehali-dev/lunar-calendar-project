@@ -38,7 +38,7 @@ function formatKey(year: number, month: number, day: number) {
 }
 
 export default function Index() {
-  const today = new Date();
+  const today = { getDate: () => 25, getMonth: () => 3, getFullYear: () => 2026 };
   const [currentYear, setCurrentYear] = useState(2026);
   const [currentMonth, setCurrentMonth] = useState(0);
   const [selectedDay, setSelectedDay] = useState<number | null>(null);
