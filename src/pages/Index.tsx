@@ -39,8 +39,8 @@ function formatKey(year: number, month: number, day: number) {
 
 export default function Index() {
   const today = new Date();
-  const [currentYear, setCurrentYear] = useState(today.getFullYear());
-  const [currentMonth, setCurrentMonth] = useState(today.getMonth());
+  const [currentYear, setCurrentYear] = useState(2026);
+  const [currentMonth, setCurrentMonth] = useState(0);
   const [selectedDay, setSelectedDay] = useState<number | null>(null);
   const [notes, setNotes] = useState<NotesMap>({});
   const [noteText, setNoteText] = useState("");
